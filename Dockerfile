@@ -10,4 +10,4 @@ wget
 RUN pip install w1thermsensor
 RUN wget https://raw.githubusercontent.com/Daniel-Langer/Docker-RaspberryPI-BierBot/main/setup.sh
 RUN chmod +x setup.sh
-RUN setup.sh
+#RUN setup.sh
