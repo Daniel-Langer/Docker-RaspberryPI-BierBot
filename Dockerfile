@@ -7,3 +7,7 @@ python3-click \
 python3-yaml \ 
 python3-pip \
 wget
+RUN pip install w1thermsensor
+wget https://raw.githubusercontent.com/Daniel-Langer/Docker-RaspberryPI-BierBot/main/setup.sh
+RUN chmod +x setup.sh
+RUN setup.sh
