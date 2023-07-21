@@ -1,6 +1,9 @@
-FROM nginx:1.25.1-alpine
-COPY src/html /usr/share/nginx/html
+FROM balenalib/raspberrypi3-debian:latest
 
-#documentation
-#EXPOSE 80
-#CMD [ "nginx", "g", "daemin off;" ]
+RUN apt-get update && sudo apt-get -y upgrade
+RUN apt-get install git \
+python3-all \
+python3-click \
+python3-yaml \ 
+python3-pip \
+wget
